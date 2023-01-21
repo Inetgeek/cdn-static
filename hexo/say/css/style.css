@@ -1,106 +1,17 @@
-/* body.light-theme,
-:root {
-    //light theme color 
-    --color-main: #222;
-    --color-background: #fff;
-    --color-text-bg: #eaeaea;
-    --color-text-hover: #eeeef1;
-    --color-memos-id: #536471;
-    --color-img-border: #cfd9de;
-    --color-tag: #2563eb;
-    --color-tag-hover: #54a3ff;
-    --color-fg-muted: #576061;
-    --color-border-default: #d0d7de;
-    --color-border-muted: #d8dee4;
-    --color-post-preview: #fff;
-    --color-memos-pre-bg: #f3f4f6;;
-
-    //variables for js, must be the same as these in @custom-media queries
-    --phoneWidth: (max-width: 684px);
-    --tabletWidth: (max-width: 900px);
-} */
-
-/* body.dark-theme {
-    // dark theme colors
-    --color-main: #adbac7;
-    --color-background: #1c2128;
-    --color-text-bg: #22272e;
-    --color-text-hover: #272c32;
-    --color-memos-id: #71767b;
-    --color-img-border: #292a2d;
-    --color-tag: #539bf5;
-    --color-link: #539bf5;
-    --color-border-muted: #2d333b;
-    --color-post-preview: #4a4b50;
-    --color-memos-pre-bg: #2d333b;
-}
-
-@media (prefers-color-scheme: light) {
-    body:not(.dark-theme) {
-        // light theme color
-        --color-main: #222;
-        --color-background: #fff;
-        --color-text-bg: #eaeaea;
-        --color-text-hover: #eeeef1;
-        --color-memos-id: #536471;
-        --color-img-border: #cfd9de;
-        --color-tag: #2563eb;
-        --color-tag-hover: #54a3ff;
-        --color-fg-muted: #576061;
-        --color-border-default: #d0d7de;
-        --color-border-muted: #d8dee4;
-        --color-post-preview: #fff;
-        --color-memos-pre-bg: #f3f4f6;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    body:not(.light-theme) {
-        // dark theme colors
-        --color-main: #adbac7;
-        --color-background: #1c2128;
-        --color-text-bg: #22272e;
-        --color-text-hover: #272c32;
-        --color-memos-id: #71767b;
-        --color-img-border: #292a2d;
-        --color-tag: #539bf5;
-        --color-link: #539bf5;
-        --color-border-muted: #2d333b;
-        --color-post-preview: #4a4b50;
-        --color-memos-pre-bg: #2d333b;
-    }
-}
-blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
     margin: 0;
-} */
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica,
-        Arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei",
-        "Microsoft Yahei", "Segoe UI", sans-serif, serif;
-    color: var(--color-main);
-    background-color: var(--color-background);
-    box-sizing: border-box;
-    min-width: 200px;
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 45px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-.title {
-    font-size: 1.5rem;
 }
 
 .pages a {
@@ -127,10 +38,11 @@ h1 {
 }
 
 blockquote {
-    margin: 1em 0;
-    padding: 0 1em;
-    color: var(--color-fg-muted);
-    border-left: 0.25em solid var(--color-border-default);
+    padding: 0em 0em 0.5em 0.5em;
+    width: 100%;
+    line-height: 2;
+    background-color: #2f3337;
+    border-left: 0.5em solid #cccccc;
 }
 
 #main {
@@ -171,8 +83,9 @@ blockquote {
     flex-grow: 1;
     margin-left: 50px;
     position: relative;
-    max-width: 100%;
-    width: 100%;
+    max-width: 90%;
+    border-radius: 40px;
+    width: 90%;
 }
 
 .memos__content:before {
@@ -191,7 +104,7 @@ blockquote {
 
 .memos__text {
     position: relative;
-    background: var(--color-text-bg);
+    background: #26292c;
     padding: 1rem;
     border-radius: 0.5rem;
     font-size: 1rem;
@@ -205,12 +118,12 @@ blockquote {
 }
 
 .timeline:hover .memos__text:before {
-    background: var(--color-text-hover);
+    background: #2f3337;
     z-index: 1;
 }
 
 .timeline:hover .memos__text {
-    background: var(--color-text-hover);
+    background: #2f3337;
 }
 
 .memos__text {
@@ -237,27 +150,18 @@ blockquote {
     height: 14px;
     transform: rotate(45deg);
     border-radius: 3px;
-    background: var(--color-text-bg);
+    background: #26292c;
+    ;
     z-index: 1;
-}
-
-.memos__text pre {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-    max-width: 100%;
-    white-space: pre-wrap;
-    border-radius: 0.25rem;
-    background-color: var(--color-memos-pre-bg);
-    padding: 0.75rem;
 }
 
 .memos__text code {
     display: inline-block;
     border-radius: 0.25rem;
-    background-color: var(--color-memos-pre-bg);
+    background-color: #292929;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
-    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
     font-size: .875rem;
     line-height: 1.5rem;
 }
@@ -266,7 +170,7 @@ blockquote {
     display: block;
 }
 
-.memos__date a{
+.memos__date a {
     color: #ff5724;
 }
 
@@ -502,6 +406,7 @@ blockquote {
 
     .memos__text:before {
         display: none;
+
     }
 
     .memos__userinfo {
