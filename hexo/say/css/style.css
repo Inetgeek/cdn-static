@@ -1,6 +1,6 @@
-body.light-theme,
+/* body.light-theme,
 :root {
-    /* light theme color */
+    //light theme color 
     --color-main: #222;
     --color-background: #fff;
     --color-text-bg: #eaeaea;
@@ -15,13 +15,13 @@ body.light-theme,
     --color-post-preview: #fff;
     --color-memos-pre-bg: #f3f4f6;;
 
-    /* variables for js, must be the same as these in @custom-media queries */
+    //variables for js, must be the same as these in @custom-media queries
     --phoneWidth: (max-width: 684px);
     --tabletWidth: (max-width: 900px);
-}
+} */
 
-body.dark-theme {
-    /* dark theme colors */
+/* body.dark-theme {
+    // dark theme colors
     --color-main: #adbac7;
     --color-background: #1c2128;
     --color-text-bg: #22272e;
@@ -37,7 +37,7 @@ body.dark-theme {
 
 @media (prefers-color-scheme: light) {
     body:not(.dark-theme) {
-        /* light theme color */
+        // light theme color
         --color-main: #222;
         --color-background: #fff;
         --color-text-bg: #eaeaea;
@@ -56,7 +56,7 @@ body.dark-theme {
 
 @media (prefers-color-scheme: dark) {
     body:not(.light-theme) {
-        /* dark theme colors */
+        // dark theme colors
         --color-main: #adbac7;
         --color-background: #1c2128;
         --color-text-bg: #22272e;
@@ -72,7 +72,7 @@ body.dark-theme {
 }
 blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
     margin: 0;
-}
+} */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica,
         Arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei",
