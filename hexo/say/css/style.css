@@ -266,6 +266,10 @@ blockquote {
     display: block;
 }
 
+.memos__date a{
+    color: #ff5724;
+}
+
 .memos__meta {
     margin: 0;
 }
@@ -329,6 +333,10 @@ blockquote {
 
 .tag-span:hover {
     color: var(--color-tag-hover);
+}
+
+.tag-span a {
+    color: #03d6a1;
 }
 
 .load-btn {
