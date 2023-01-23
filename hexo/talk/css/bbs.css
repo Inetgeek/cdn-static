@@ -52,7 +52,7 @@
 .talk-list li a {
     text-decoration: none;
     overflow-x: hidden;
-    color: var(--text-p2);
+    color: var(--text-p0);
 }
 
 .talk-list li a:hover {
