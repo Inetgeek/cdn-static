@@ -26,7 +26,8 @@ if (window.location.href === window.location.origin + "/") {
         fetch(bbUrl).then(res => res.json()).then(resdata => {
             var result = '', resultAll = "", data = resdata.data
             for (var i = 0; i < data.length; i++) {
-                var bbTime = new Date(data[i].createdTs * 1000).toLocaleString()
+                var bbTime = moment(data[i].createdTs * 1000).twitter()
+                // var bbTime = new Date(data[i].createdTs * 1000).toLocaleString()
                 var bbCont = data[i].content
                 var newbbCont = bbCont.replace(/(https?:[^:<>"]*\/)([^:<>"]*)(\.((png!thumbnail)|(png)|(jpg)|(webp)|(jpeg)|(gif))(!blogimg)?)/g, ' 🌅 ').replace(/\bhttps?:\/\/(?!\S+(?:jpe?g|png|bmp|gif|webp|jfif|gif))\S+/g, '👉')
                 result += `<li class="item">🔔<span class="datetime">${bbTime}</span>： <a href="https://blog.inetgeek.cn/talks/">${newbbCont}</a></li>`;
@@ -36,8 +37,8 @@ if (window.location.href === window.location.origin + "/") {
             var bbAfter = `</ul></div>`
             resultAll = bbBefore + result + bbAfter
             bbDom.innerHTML = resultAll;
-            //相对时间
-            window.Lately && Lately.init({ target: '.datetime' });
+            // //相对时间
+            // window.Lately && Lately.init({ target: '.datetime' });
         });
         setInterval(function () {
             for (var s, n = document.querySelector(".talk-list"), e = n.querySelectorAll(".item"), t = 0; t < e.length; t++)

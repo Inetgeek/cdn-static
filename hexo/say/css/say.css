@@ -27,7 +27,7 @@
         --color-memos-id: #71767b;
         --color-img-border: #292a2d;
         --color-tag: #539bf5;
-        --color-link: red/*#539bf5*/;
+        --color-link: #539bf5;
         --color-border-muted: #2d333b;
         --color-post-preview: #4a4b50;
         --color-memos-pre-bg: #2d333b;
@@ -163,6 +163,16 @@ blockquote {
     background: var(--color-text-bg);
     ;
     z-index: 1;
+}
+
+.memos__text pre {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    max-width: 100%;
+    white-space: pre-wrap;
+    border-radius: 0.25rem;
+    background-color: var(--color-memos-pre-bg);
+    padding: 0.75rem;
 }
 
 .memos__text code {
