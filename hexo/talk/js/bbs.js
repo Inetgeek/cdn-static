@@ -19,7 +19,8 @@ document.body.oncopy = function () {
 };
 var top_box = document.querySelector(".post-list .post");
 var top_div = "<div id=\"bber-talk\"></div>";
-if (window.location.href === window.location.origin + "/") {
+console.log(window.location.href, window.location.origin)
+if (window.location.href === window.location.origin + "/posts/") {
     top_box.insertAdjacentHTML("beforebegin", top_div);
     document.addEventListener("DOMContentLoaded", () => {
         var bbUrl = "https://say.inetgeek.cn/api/memo?creatorId=1&rowStatus=NORMAL"
