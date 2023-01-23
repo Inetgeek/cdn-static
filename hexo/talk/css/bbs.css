@@ -10,7 +10,7 @@
     padding: 10px 0px;
     margin: 0 0;
     position: relative;
-    background-color: #3d3d3d;
+    background-color: var(--block);
     border-radius: 8px;
     font-size: 15px;
     overflow: hidden;
