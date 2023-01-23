@@ -31,7 +31,7 @@
 .talk-list {
     margin: 5px;
     height: 30px;
-    color: #ffffff;
+    color: var(--text-p2);
 }
 
 .talk-list li {
@@ -52,7 +52,7 @@
 .talk-list li a {
     text-decoration: none;
     overflow-x: hidden;
-    color: #f1f3f4;
+    color: var(--text-p2);
 }
 
 .talk-list li a:hover {
