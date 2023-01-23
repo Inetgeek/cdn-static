@@ -171,14 +171,14 @@ blockquote {
     max-width: 100%;
     white-space: pre-wrap;
     border-radius: 0.25rem;
-    background-color: var(--color-memos-pre-bg);
+    background-color: var(--block);
     padding: 0.75rem;
 }
 
 .memos__text code {
     display: inline-block;
     border-radius: 0.25rem;
-    background-color: var(--color-memos-pre-bg);
+    background-color: var(--block);
     padding-left: 0.25rem;
     padding-right: 0.25rem;
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
