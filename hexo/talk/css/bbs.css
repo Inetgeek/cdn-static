@@ -58,7 +58,7 @@
 .talk-list li a:hover {
     text-decoration: none;
     overflow: hidden;
-    color: #ff5931;
+    color: #ff5724;
 }
 
 @media only screen and (max-width:683px) {
