@@ -30,7 +30,7 @@ if (window.location.href === window.location.origin + "/") {
                 // var bbTime = new Date(data[i].createdTs * 1000).toLocaleString()
                 var bbCont = data[i].content
                 var newbbCont = bbCont.replace(/(https?:[^:<>"]*\/)([^:<>"]*)(\.((png!thumbnail)|(png)|(jpg)|(webp)|(jpeg)|(gif))(!blogimg)?)/g, ' 🌅 ').replace(/\bhttps?:\/\/(?!\S+(?:jpe?g|png|bmp|gif|webp|jfif|gif))\S+/g, '👉')
-                result += `<li class="item">🔔<span class="datetime">${bbTime}</span>： <a href="https://blog.inetgeek.cn/talks/">${newbbCont}</a></li>`;
+                result += `<li class="item"><i class="fa-solid fa-circle-info"></i><span class="datetime">${bbTime}</span>： <a href="https://blog.inetgeek.cn/talks/">${newbbCont}</a></li>`;
             }
             var bbDom = document.querySelector('#bber-talk');
             var bbBefore = `<div class="talk-wrap"><ul class="talk-list">`
