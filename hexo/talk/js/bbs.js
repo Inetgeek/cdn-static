@@ -42,7 +42,7 @@ if (window.location.href === window.location.origin + "/posts/") {
             // window.Lately && Lately.init({ target: '.datetime' });
         });
         setInterval(function () {
-            for (var s, n = document.querySelector(".talk-list"), e = n.querySelectorAll(".item"), t = 0; t < e.length; t++)
+            for (var s, n = document.querySelector("#bber-talk>.talk-wrap>.talk-list"), e = n.querySelectorAll(".item"), t = 0; t < e.length; t++)
                 setTimeout(function () {
                     n.appendChild(e[0])
                 }, 1000)
